@@ -1,0 +1,257 @@
+
+<h2>  PROFILE</h2>
+
+<!-- <div ng-if="isProfile">
+<div class="anq" id="app-growl"></div>
+<div class="ans dj">
+    <div class="by" style="position:relative;top:45px;">
+
+        <div class="by amt">
+            <div class="col-xs-12">
+                <div class="col-xs-12 col-lg-8">
+                    <div class="col-xs-12 linkd-in">
+                           <div class="qv rc aog alu">
+                                
+                                <div class="qw dj">
+                                  <a href="profile/index.html">
+                                    <img class="aoh" [src]="listItem?.pictureUrl">
+                                  </a>
+                               
+
+                                  <h5 class="qy" >
+                                    <h3 class="aku" style="margin-top:35px;">{{listItem?.firstName}} {{listItem?.lastName}}</h3>
+                                    <h4 class="aku">{{listItem?.headline}}</h4>
+                                  </h5>
+
+                                 
+                                  <div class="qv rc sm sp clearfix" style="font-size:14px;">
+                                    <div class="gz pull-left">
+                                      <ul class="eb tb" style="text-align:left;font-size:13px;"> 
+                                        <li><span class="dp h xh all"></span><span>Name :</span> <span><b>{{listItem?.firstName}} {{listItem?.lastName}}</b></span>
+                                        </li>
+                                         <li><span class="dp h xh all"></span><span>Birth :</span> <span> <b>{{listItem?.dateOfBirth?.day}}/{{listItem?.dateOfBirth?.month}}/{{listItem?.dateOfBirth?.year}}</b></span>
+                                        </li>
+                                         <li><span class="dp h xh all"></span><span>LinkedIn Recommenders :</span> <span> <b>{{listItem?.numRecommenders}}</b></span>
+                                        </li>
+                                        <li><span class="dp h abu all"></span><span>Industry :</span> <span> <b>{{listItem?.industry}}</b></span>
+                                        </li><li><span class="dp h ack all"></span><span>Lives in :</span><span><b>San Francisco, CA</b></span>
+                                        </li><li><span class="dp h adt all"></span><span>interests : </span><span><b>{{listItem?.interests}}</b></span>
+                                      </li>
+                                      </ul>
+                                    </div>
+                                  </div>
+                                  
+                                </div>
+                        </div>       
+      
+                    </div>   
+                    <div class="col-xs-12 linkd-in">
+                         <li class="qf b">
+                            <div class="qg">
+                              <div class="qn">
+                                <h3>Summary</h3>
+                              </div>
+
+                              <p style="text-align: left;word-break: break-word;" [innerHTML] = "listItem?.summary | newline">
+                              
+                              </p>
+                            </div>
+                          </li>
+                    </div> 
+                     <div class="col-xs-12 linkd-in">
+                      
+                         <li class="qf b" >
+                            <div class="qg">
+                              <div class="qn">
+                                <h3>Publications</h3>
+                              </div>
+                              <div *ngFor="#item of listItem?.publications?.values">
+                                <h4><p style="font-s">{{item?.title}}</p></h4>
+                                <h5 class="pull-left">{{item?.publisher?.name}}</h5>
+                                <h5 class="pull-right">{{item?.date?.day}}/{{item?.date?.day}}/{{item?.date?.year}}</h5>
+                                <p style="text-align: left;word-break: break-word;clear:both;">
+                                  {{item?.summary}}
+                                </p>
+                              </div>
+                            </div>
+                          </li>
+                    </div> 
+                    <div class="col-xs-12 linkd-in">
+                         <li class="qf b">
+                            <div class="qg">
+                              <div class="qn">
+                                <h3>Courses</h3>
+                              </div>
+
+                              <ul>
+                                  <h5 style="text-align: left;word-break: break-word;">
+                                      Karamvir Dadasaheb Kannamwar Engineering College, Nandanvan
+                                  </h5>
+                                 <li style="text-align:left;" *ngFor="#item of listItem?.courses?.values">
+                                   <span>{{item?.name}}</span>
+                                 </li>
+                              </ul>
+                            </div>
+                          </li>
+                    </div> 
+                    <div class="col-xs-12 linkd-in">
+                         <li class="qf b">
+                            <div class="qg">
+                              <div class="qn">
+                                <h3>Languages</h3>
+                              </div>
+                              <ul>
+                                 <li style="text-align:left;" *ngFor="#item of listItem?.languages?.values">
+                                   <div>
+                                      <strong>{{item?.language?.name}}</strong>
+                                      <p>
+                                        {{item?.proficiency?.level}}
+                                      </p>
+                                    </div>
+                                 </li>
+                              </ul>
+                            </div>
+                          </li>
+                    </div> 
+                     
+                    <div class="col-xs-12 linkd-in">
+                         <li class="qf b">
+                            <div class="qg">
+                              <div class="qn">
+                                <h3>Work Experiences</h3>
+                              </div>
+                              <ul>
+                                 <li style="text-align:left;" *ngFor="#item of listItem?.threePastPositions?.values">
+                                   <h4 style="text-align: left;word-break: break-word;">
+                                       {{item?.title}}
+                                   </h4>
+                                   <h5 style="text-align: left;word-break: break-word;">
+                                     {{item?.company?.name}}
+                                  </h5>
+                                   <h6 class="">{{item?.startDate?.year}} - {{item?.endDate?.year}}</h6>
+                                   <span> <b>Size-</b>{{item?.company?.size}}, {{item?.company?.type}}</span>
+                                   <h6>{{item?.company?.industry}}</h6> 
+                                   <h6>{{item?.location?.name}}</h6>
+                                 </li>
+                              </ul>
+                            </div>
+                          </li>
+                    </div>
+                     <div class="col-xs-12 linkd-in">
+                         <li class="qf b">
+                            <div class="qg">
+                              <div class="qn">
+                                <h3>Educations</h3>
+                              </div>
+                              <ul>
+                                 <li style="text-align:left;" *ngFor="#item of listItem?.educations?.values">
+                                   <h5 style="text-align: left;word-break: break-word;">
+                                     {{item?.schoolName}}
+                                  </h5>
+                                   <span>{{item?.degree}},{{item?.fieldOfStudy}}</span>
+                                   <h6 class="">{{item?.startDate?.year}} - {{item?.endDate?.year}}</h6>
+                                 </li>
+                              </ul>
+                            </div>
+                          </li>
+                    </div>
+                    <div class="col-xs-12 linkd-in">
+                         <li class="qf b">
+                            <div class="qg">
+                              <div class="qn">
+                                <h3>Certifications</h3>
+                              </div>
+                              <ul>
+                                 <li style="text-align:left;" *ngFor="#item of listItem?.certifications?.values">
+                                   <h5 style="text-align: left;word-break: break-word;">
+                                     {{item?.name}}
+                                  </h5>
+                                   <span>{{item?.authority?.name}}</span>
+                                   <h6 class="">{{item?.startDate?.year}}</h6>
+                                 </li>
+                              </ul>
+                            </div>
+                          </li>
+                    </div>
+                    <div class="col-xs-12 linkd-in">
+                         <li class="qf b">
+                            <div class="qg">
+                              <div class="qn">
+                                <h3>Skills & Endorsements</h3>
+                              </div>
+                              <div id="chart1"  class="gz pull-left col-xs-12 col-sm-6"></div>
+                              <ul class="pull-right col-xs-12 col-sm-5">
+                                  <h5 style="text-align:left;word-break: break-word;">
+                                        My Skills::
+                                  </h5>
+                                 <li style="float: left;width: auto !important;margin: 0 6px 4px 5px; background:#ccc;border-radius:4px;" *ngFor="#item of listItem?.skills?.values">
+                                     {{item?.skill?.name}}
+                                 </li>
+                              </ul>
+                            </div>
+                          </li>
+                    </div>
+                      <div class="col-xs-12 linkd-in">
+                         <li class="qf b">
+                            <div class="qg">
+                              <div class="qn">
+                                <h3>Volunteer</h3>
+                              </div>
+                              <ul class="alu" style="text-align:left;">
+                                  <h5 style="text-align: left;word-break: break-word;">
+                                      Opportunities you are looking for:
+                                  </h5>
+                                  <h5>How would you like to donate your time and talent?</h5>
+                                 <li style="text-align:left;">
+                                   preferred volunteering opportunitiesJoining a nonprofit board
+                                </li>
+                                <li style="text-align:left;">
+                                Edit preferred volunteering opportunitiesSkills-based volunteering (pro bono consulting)
+                                 </li>
+                              </ul>
+                               <ul>
+                                  <h5 style="text-align:left;word-break: break-word;">
+                                      Causes I care about::
+                                  </h5>
+                                 <li style="text-align:left;" *ngFor="#item of listItem?.volunteer?.causes?.values">
+                                    {{item?.name}}
+                                 </li>
+                              </ul>
+                            </div>
+                          </li>
+                    </div> 
+
+                     <div class="col-xs-12 linkd-in">
+                         <div class="qf b aml">      
+                          <h3 class="ald">Recommendations</h3>
+                          <ul class="qo anx">
+                            <li class="qf alm clearfix" *ngFor="#item of listItem?.recommendationsReceived?.values" >
+                              <a class="qj" href="#">
+                                <img class="qh cu" [src]="item?.recommender?.pictureUrl">
+                              </a>
+                              <div class="qg" style="text-align:left;">
+                                <strong>{{item?.recommender?.firstName}} {{item?.recommender?.lastName}}</strong>
+                                <h5>{{item?.recommender?.headline}},{{item?.recommendationType?.code}}</h5>
+                                <div class="aoa">
+                                  <p>{{item?.recommendationText}}</p>
+                                </div>
+                              </div>
+                            </li>
+                          </ul>
+                          </div>
+                    </div>
+                </div>
+                  <div class="col-xs-12 col-lg-4">
+                           <div class="col-xs-12 linkd-in">
+                                  <div class="qw">
+                                    <h5 class="ald">Profile Strength Vs Profile Visitors</h5>
+                                 
+                                  </div>
+                            </div>
+                           
+                    </div>
+            </div>
+        </div>
+    </div>
+</div>
+</div> -->

@@ -1,0 +1,225 @@
+@media (min-width: 320px){
+ .by {
+     width: 100%; 
+}
+
+}
+
+@media (min-width: 1350px){
+ .hiring-skills {
+     width: 53%; 
+}
+}
+
+@media(max-width:1200px){
+  .profile-w{
+    padding-bottom: 17px;
+    padding-left: 0;
+    padding-right: 0;
+    padding-top: 0;
+    min-height: 381px !important;
+  }
+}
+@media (max-width: 1177px){
+  
+  .hiring-skills{
+    width: 70%;
+    margin: 0 auto;
+    overflow: hidden;
+    padding: 0 0 20px;
+  }
+}
+@media (max-width: 1070px){
+  
+  .hiring-skills{
+    width: 75%;
+  }
+}
+
+@media (max-width: 1000px){
+  
+  .hiring-skills{
+    width: 87%;
+    padding: 9px 10px 33px;
+  }
+  
+   .profile-w{
+    text-align: center;
+    min-height: auto !important;
+    padding: 20px;
+  }
+
+   .profile-w p{
+    text-align: center;
+    width:60%;
+  }
+
+}
+
+
+
+@media (max-width: 900px){
+ .hiring-skills{
+    width: 80%;
+    padding: 9px 10px 33px;
+  }
+  .d-square {
+    width: 80px;
+    height: 80px;
+    margin: 10px 13px 0 12px;
+  }
+  .d-square .skills-w {
+    width: 50px;
+    height: 50px;
+    position: relative;
+    top: 12px;
+    transform: rotateZ(-45deg);
+    -webkit-transform: rotateZ(-45deg);
+    -moz-transform: rotateZ(-45deg);
+    margin: 0px 14px 9px 16px;
+  }
+
+  .purpled .monster_wrapper_left {
+    width: 237px;
+    height: 219px;
+    top: 12px;
+  }
+  .tealed .monster_wrapper_right {
+    width: 161px;
+    height: 210px;
+    top: -74px;
+}
+}
+
+
+@media (max-width: 768px){
+  .pg2_article p{
+      width:80%;
+  }
+  .hiring-skills{
+    width: 86%;
+    margin: 0 auto;
+    overflow: hidden;
+    padding: 13px;
+  }
+  .d-square {
+    width: 70px;
+    height: 70px;
+    margin: 10px 13px 0 12px;
+  }
+  .d-square:hover .skills-list{
+       width: 70px;
+       height: 70px;
+  }
+  .d-square .skills-list{
+      display:none;
+  }
+  .d-square .skills-w{
+    width: 42px;
+    height: 42px;
+    position: relative;
+    top: 16px;
+     margin: 0px 14px 9px 13px;
+  }
+
+   .profile-w p{
+    text-align: center;
+    width:90%;
+
+  }
+  .expertise-list{
+    min-height: auto !important;
+    width: 50%;
+    float: left;
+    text-align: center;
+    list-style: none;
+  }
+  .expertise-list .list {
+    margin: 0 auto;
+}
+.expertise-list .sublist {
+    width: 100%;
+    text-align: center;
+}
+.expertise-list .sublist p {
+    width: 100%;
+    text-align: center;
+}
+li.expertise-list:last-child {
+    width: 100%;
+}
+}
+
+
+@media (max-width: 649px){
+  
+  .hiring-skills{
+    width: 80%;
+    padding: 0 0 10px 0;
+  }
+  .d-square {
+    width: 50px;
+    height: 50px;
+    margin: 10px 13px 0 12px;
+  }
+  .d-square .skills-list{
+      display:none;
+  }
+  .d-square:hover .skills-list{
+       width: 66px;
+       height: 66px;
+       display:none;
+  }
+  .d-square .skills-w{
+    width: 30px;
+    height: 30px;
+    position: relative;
+    top: 11px;
+    margin: 0px 14px 9px 13px;
+  }
+  .viewing_3.fixed.tealed .monster_wrapper_right {
+    -webkit-transform: translate3d(0%,10%,0);
+     transform: translate3d(0%,10%,0); 
+}
+.viewing_3.fixed.purpled .monster_wrapper_left {
+     -webkit-transform: translate3d(0%,-38%,0); 
+    transform: translate3d(0%,-38%,0);
+}
+  .viewing_3.fixed.tealed .pg2_article p{
+    -webkit-transform: scale(1) translateY(150px);
+    -ms-transform: scale(1) translateY(150px);
+    transform: scale(1) translateY(150px);
+    width:70%;
+  }
+  .typing_done .pg3_article p {
+    -webkit-transform: scale(1) translateY(163px);
+    -ms-transform: scale(1) translateY(163px);
+    transform: scale(1) translateY(163px);
+    width:70%;
+}
+}
+
+@media (max-width: 520px){
+  
+  .hiring-skills{
+    width: 85%;
+  }
+  .d-square {
+    width: 50px;
+    height: 50px;
+    margin: 10px 13px 0 12px;
+  }
+}
+
+@media (max-width: 480px){
+  
+  .hiring-skills{
+    width: 95%;
+  }
+}
+
+@media (max-width: 420px){
+  .d-square {
+   display:none;
+  }
+}
